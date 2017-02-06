@@ -1,0 +1,22 @@
+Title for my presentation
+This is subtitle
+08 Feb 2017
+
+Tags: go golang 
+ 
+Umut Tufan
+Try to be a Gopher
+tufanumut@gmail.com
+http://www.hurriyet.com.tr
+@umt2fun
+ 
+* Who is this guy?
+ 
+.image ./talim.jpg
+ 
+- Programming addict
+- C#, Java, C++, Go
+- Senior Sofware Developer, @Hurriyet
+.link http://www.hurriyet.com.tr The Hürriyet Gazetecilik ve Matbaacılık A.Ş.
+ 
+* Example Go code
