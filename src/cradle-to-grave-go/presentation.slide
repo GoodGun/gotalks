@@ -64,7 +64,7 @@ details about Golang in wiki
 .image ./gopher-head.png
 
 * hello world to Go!!!
-.image ./helloGo.png
+.image ./hello-go.png
 
 * variable using in Go!!!
 .image ./variable.png
