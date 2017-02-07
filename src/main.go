@@ -6,6 +6,8 @@ import (
 	"expChannel/channel"
 	"fmt"
 	"mathcommon/math"
+	"net/http"
+	"www/wwwweb"
 )
 
 func main() {
@@ -57,6 +59,11 @@ func main() {
 
 	//Ornek 10 Interface Kullanım örneği
 	f.A()
+
+	//Ornek 11 simple web server
+	//go lang ile web site oluşturma ornekleri
+	http.HandleFunc("/", wwwweb.Handler)
+	http.ListenAndServe(":1907", nil)
 }
 
 type Foo struct {
