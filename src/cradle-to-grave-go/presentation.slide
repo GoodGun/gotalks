@@ -51,12 +51,6 @@ details about Golang in wiki
 .caption _Gopher_ by [[http://www.reneefrench.com][Renée French]]
 .image ./gopher.jpg
 
-
-
-
- 
-
-
 * Who Use?
 - Google
 - Facebook
@@ -67,16 +61,13 @@ details about Golang in wiki
 - bitly
 - vimeo
 
-
 .image ./gopher-head.png
-
 
 * hello world to Go!!!
 .image ./helloGo.png
 
 * variable using in Go!!!
 .image ./variable.png
-
 
 * Thank you...
 Umut Tufan
