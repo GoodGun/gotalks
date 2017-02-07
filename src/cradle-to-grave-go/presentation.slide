@@ -72,7 +72,10 @@ details about Golang in wiki
 
 
 * hello world to Go!!!
-.image ./helloGo.PNG
+.image ./helloGo.png
+
+* variable using in Go!!!
+.image ./variable.png
 
 
 * Thank you...
