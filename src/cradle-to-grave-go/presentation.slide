@@ -1,22 +1,58 @@
-Title for my presentation
-This is subtitle
+Cradle to grave! Google's Golang...
+Hurriyet Gazetecilik ve Matbaacilik A.S.
 08 Feb 2017
+
+Umut Tufan
+Senior Sofware Developer at Hurriyet .image ./golang-mashup.png
+
 
 Tags: go golang 
  
 Umut Tufan
-Try to be a Gopher
-tufanumut@gmail.com
-http://www.hurriyet.com.tr
-@umt2fun
+try to be Gopher
+programming addicted
+C#, Java, C++, Go hooked
+Senior Sofware Developer, @Hurriyet
+
+visit company website Hürriyet Gazetecilik ve Matbaacılık A.Ş. ;
+    - http://www.hurriyet.com.tr 
+
+main on;    
+    - tufanumut@gmail.com
+
+follow on twitter;
+    - @umt2fun
  
-* Who is this guy?
+* Agenda
+- About
+- Creators
+- Why Golang?
+
+
+* About
+- Golang is an open source Google project started in 2007
+- Open source release in November 2009
+- Golang 1.0 version released in March 2012
+- compiled
+- concurrent
+- garbage-collected
+- statically typed 
+- procedural and structured language like C, fortran, pascal
+- declarative(tells to computer what to do like scala)
+- imperative(tells to computer hot to do like ruby)
+- simple
+- write less
+
+
+* Creators
+- Coded by legends whose are Robert Grisemer, Rob Pike and Ken Thompson
+
+.image ./gocreators.png
  
-.image ./talim.jpg
- 
-- Programming addict
-- C#, Java, C++, Go
-- Senior Sofware Developer, @Hurriyet
-.link http://www.hurriyet.com.tr The Hürriyet Gazetecilik ve Matbaacılık A.Ş.
+
+
+
+
+
  
 * Example Go code
