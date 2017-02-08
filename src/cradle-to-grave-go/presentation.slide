@@ -12,6 +12,9 @@ Senior Sofware Developer at Hurriyet
 - Creators
 - Why Golang?
 - Gopher
+- Who Use?
+- General...
+- Package Management
 - Linus Torvalds: "Talk is cheap show me the code!!!" 
 
 .image ./gopher-head.png
@@ -45,11 +48,35 @@ details about Golang in wiki
 - Coded by legends whose are Robert Griesemer, Rob Pike and Ken Thompson
 
 .image ./gocreators.png
-- Creators of JVM, Unix-UTF-8, B and C langs/Unix/UTF-8)
+- Creators of JVM, Unix-UTF-8, B and C langs)
+
+* Why Golang?
+- Compiles to native machine code no need any environments like JVM, CLR
+- Fast Compilation
+- Compiles into executable file
+- using with app containers like Docker
+- Garbage Collection
+- simple syntax with only 25 keywords
+- work on distrubuted environments
+.image ./golang-mashup.png 250 250
+
+* Dependency Management
+- Go gives compile time errors if binds unused dependencies
+- No circular dependency allowed
+
+* Compilation Structure
+- Golang compile architecture takes an advantage of Rob Pike's Plan9(prohibits header files like C)
+- Less I/O, faster Compilation
+- after changing go compiler lang from C++ to Go, compiler is faster than old
+
+* Garbage Collection
+- you can not change GC operations, can not request or supress finalization 
+- references is smaller than all langs
+- memory allocations is smaller than all langs
 
 * Gopher
 .caption _Gopher_ by [[http://www.reneefrench.com][Renée French]]
-.image ./gopher.jpg
+.image ./gopher.jpg 
 
 * Who Use?
 - Google
@@ -61,6 +88,93 @@ details about Golang in wiki
 - bitly
 - vimeo
 
+.image ./gopher-head.png
+
+* General...
+- What types of programs should we use Go?
+    - Systems programming
+    - web apps
+    - command line tools
+    - games
+    - scientific programming
+- Application Programs vs. System Programs
+    - e-commerce            - API's
+    - to-do lists           - game engines
+    - end-user programs     - network apps
+    - etc...                - developer apps
+- Supported OS
+    - Linux
+    - Windows
+    - MAC OS
+    - BSD etc...
+
+* Package Management
+- A workspace is a directory hierarchy with three directories at its root:
+    - src contains Go source files,
+    - pkg contains package objects, and
+    - bin contains executable commands.
+.image ./golangpackagemanagement.png 350 350
+.link https://golang.org/doc/code.html for details about Go package management
+
+* Access Modifiers in Go
+- Name of the identifier itself shows the visibility
+    - Upper case initial letter -> public to other packages
+    - Lower case initial letter -> private to other packages
+.image ./gopher-head.png
+
+* Type Conversion
+- type Conversion in golang is different
+    -   package main
+
+        import "fmt"
+
+        func main(){
+            var x float64 = 5.5
+            var y int = int(x)
+        }
+
+* Variables
+    -var x int
+    -var y bool = false
+    -var z string = "hurriyet"
+
+-shortcuts
+    x:=10     
+    y:=false
+
+* Arrays
+
+- var arrList = [...]int[1,2,3,4]
+- var arrList = [3]int[1,2,3]
+- shortcuts also can use to define and apply arrays
+
+* Pointers
+
+
+* Concurrency
+- Do not communicate by sharing memory; instead, share memory by comminicating.
+.image ./gopher.gif
+
+* Goroutine
+- function executing concurrent with other operations
+- lightweight
+- similar to await in C#
+- uses with go keyword
+    -   go list.Sort() // run list sort concurrently do not wait
+
+* Channels
+- way for 2 goroutines to communicate and synchronize their execution
+- by default, sends and receives block until the other side is ready
+
+* Stack Management
+
+- POSIX threads
+    - large amount of memory pre-reserved
+    - amount of available memory reduces with increase in threads
+- Goroutine
+    - starts with 2k
+    - a check before function call
+    - shrinks with GC
 .image ./gopher-head.png
 
 * hello world to Go!!!
