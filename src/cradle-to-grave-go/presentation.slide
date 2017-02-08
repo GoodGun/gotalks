@@ -63,16 +63,22 @@ details about Golang in wiki
 * Dependency Management
 - Go gives compile time errors if binds unused dependencies
 - No circular dependency allowed
+.image ./gopher-head.png
+
 
 * Compilation Structure
 - Golang compile architecture takes an advantage of Rob Pike's Plan9(prohibits header files like C)
 - Less I/O, faster Compilation
 - after changing go compiler lang from C++ to Go, compiler is faster than old
+.image ./gopher-head.png
+
 
 * Garbage Collection
 - you can not change GC operations, can not request or supress finalization 
 - references is smaller than all langs
 - memory allocations is smaller than all langs
+.image ./gopher-head.png
+
 
 * Gopher
 .caption _Gopher_ by [[http://www.reneefrench.com][Renée French]]
@@ -132,24 +138,49 @@ details about Golang in wiki
             var x float64 = 5.5
             var y int = int(x)
         }
+.image ./gopher-head.png
 
 * Variables
-    -var x int
-    -var y bool = false
-    -var z string = "hurriyet"
+    var x int
+    var y bool = false
+    var z string = "hurriyet"
 
--shortcuts
+    //shortcuts
     x:=10     
     y:=false
+.image ./gopher-head.png
+
 
 * Arrays
 
 - var arrList = [...]int[1,2,3,4]
 - var arrList = [3]int[1,2,3]
 - shortcuts also can use to define and apply arrays
+.image ./gopher-head.png
+
 
 * Pointers
+ 
+        package main
+        import "fmt"
+        func main() {
+            i, j := 42, 2701
 
+            p := &i         // point to i
+            fmt.Println(*p) // read i through the pointer
+            *p = 21         // set i through the pointer
+            fmt.Println(i)  // see the new value of i
+
+            p = &j         // point to j
+            *p = *p / 37   // divide j through the pointer
+            fmt.Println(j) // see the new value of j
+        }
+
+        Output
+        initial: 1
+        zeroval: 1
+        zeroptr: 0
+        pointer: 0x42131100
 
 * Concurrency
 - Do not communicate by sharing memory; instead, share memory by comminicating.
@@ -182,6 +213,40 @@ details about Golang in wiki
 
 * variable using in Go!!!
 .image ./variable.png
+
+* Go Web Frameworks
+- Revel
+- Gorilla
+- Web.go
+- Gin Gonic
+- Martini
+- Go Craft
+- Beego
+- net/http(built-in)
+
+* Go Hasn't ?
+- OOP
+- No Generics
+- No Assertions
+- No Exception Handling
+- No Polymorphism
+- No while or do-while
+
+* Built-in TDD Go?
+- Programming is not easy; even the best programmers are incapable of writing programs that work exactly as intended every time. Therefore an important part of the software development process is testing. Writing tests for our code is a good way to ensure quality and improve reliability.
+- write test code;
+    package math
+    import "testing"
+    func TestAverage(t *testing.T) {
+        var v float64
+        v = Average([]float64{1,2})
+        if v != 1.5 {
+            t.Error("Expected 1.5, got ", v)
+        }
+    }
+- save as math_test.go
+- run command-> go test
+- Result will be FAIL or PASS
 
 * Thank you...
 Umut Tufan
