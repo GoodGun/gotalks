@@ -1,11 +1,17 @@
 Cradle to grave! Google's Golang...
-Hurriyet Gazetecilik ve Matbaacilik A.S.
-08 Feb 2017
 
 Umut Tufan
 Senior Sofware Developer at Hurriyet
+Hurriyet Gazetecilik ve Matbaacilik A.S.
 
- 
+@umt2fun
+tufanumut@gmail.com
+aim;
+- try to be Gopher
+- programming addicted
+- C#, Java, C++, Go hooked
+- Senior Sofware Developer at Hurriyet
+
 * Agenda
 - About
 - Specifications
@@ -51,6 +57,10 @@ details about Golang in wiki
 - Creators of JVM, Unix-UTF-8, B and C langs)
 
 * Why Golang?
+Go is an answer to problems of scale at Google.
+.image ./datacenter.jpg 500 952
+
+* 
 - Compiles to native machine code no need any environments like JVM, CLR
 - Fast Compilation
 - Compiles into executable file
@@ -59,6 +69,14 @@ details about Golang in wiki
 - simple syntax with only 25 keywords
 - work on distrubuted environments
 .image ./golang-mashup.png 250 250
+
+* System Scale
+- designed to scale to 10⁶⁺ machines
+- everyday jobs run on 1000s of machines
+- jobs coordinate, interact with others in the system
+- lots going on at once
+- Solution: great support for concurrency
+.image ./gophercomplex6.jpg
 
 * Dependency Management
 - Go gives compile time errors if binds unused dependencies
@@ -82,7 +100,7 @@ details about Golang in wiki
 
 * Gopher
 .caption _Gopher_ by [[http://www.reneefrench.com][Renée French]]
-.image ./gopher.jpg 
+.image ./gopher.jpg 500 812
 
 * Who Use?
 - Google
@@ -186,15 +204,19 @@ details about Golang in wiki
 - Do not communicate by sharing memory; instead, share memory by comminicating.
 .image ./gopher.gif
 
-* Goroutine
+* Goroutines
 - function executing concurrent with other operations
 - lightweight
+- they start with tiny stacks and resize as needed.
+- go programs can have hundreds of thousands of them.
 - similar to await in C#
 - uses with go keyword
-    -   go list.Sort() // run list sort concurrently do not wait
+    go list.Sort() // run list sort concurrently do not wait
+- the Go runtime schedules goroutines onto OS threads.
+- blocked goroutines don't use a thread.
 
 * Channels
-- way for 2 goroutines to communicate and synchronize their execution
+- channels provide communication between goroutines.
 - by default, sends and receives block until the other side is ready
 
 * Stack Management
@@ -225,12 +247,20 @@ details about Golang in wiki
 - net/http(built-in)
 
 * Go Hasn't ?
-- OOP
+- No OOP
 - No Generics
+- No constructors
 - No Assertions
 - No Exception Handling
+- No Inheritance
+- No Annotations
 - No Polymorphism
 - No while or do-while
+
+* Comparing Go and other languages
+
+* "Go: 90% Perfect, 100% of the time" -bradfitz, 2014
+.image ./funfast.svg
 
 * Built-in TDD Go?
 - Programming is not easy; even the best programmers are incapable of writing programs that work exactly as intended every time. Therefore an important part of the software development process is testing. Writing tests for our code is a good way to ensure quality and improve reliability.
@@ -248,18 +278,23 @@ details about Golang in wiki
 - run command-> go test
 - Result will be FAIL or PASS
 
-* Thank you...
-Umut Tufan
-    - try to be Gopher
-    - programming addicted
-    - C#, Java, C++, Go hooked
-    - Senior Sofware Developer, @Hurriyet
 
-visit company website Hürriyet Gazetecilik ve Matbaacılık A.Ş. ;
-    - http://www.hurriyet.com.tr 
+* You're interested in Go. What next?
+Take the Go Tour online.
+.link tour.golang.org
+Then go deeper ...
+.link golang.org/wiki/Learn
+Still interested?
+Run a pilot project.
 
-main on;    
-    - mail to tufanumut@gmail.com
+* Go is designed for tooling
+Go tools meet you where you are. There's no one "Go IDE".
 
-follow on twitter;
-    - follow on twitter @umt2fun
+- IDE & editor integration: Eclipse, IntelliJ, VisualStudio, SublimeText, emacs, vim, ...
+- play.golang.org: online playground
+- gofmt: automatic formatting
+- goimports: automatic updates of package imports
+- gocode: automatic completion
+- the go tool: automatic fetch & build
+- guru: static analysis, bug finding, code navigation
+- godoc.org: open source package index and docs
