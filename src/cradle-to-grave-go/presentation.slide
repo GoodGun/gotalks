@@ -278,15 +278,6 @@ Go is an answer to problems of scale at Google.
 - run command-> go test
 - Result will be FAIL or PASS
 
-
-* You're interested in Go. What next?
-Take the Go Tour online.
-.link tour.golang.org
-Then go deeper ...
-.link golang.org/wiki/Learn
-Still interested?
-Run a pilot project.
-
 * Go is designed for tooling
 Go tools meet you where you are. There's no one "Go IDE".
 
@@ -298,3 +289,17 @@ Go tools meet you where you are. There's no one "Go IDE".
 - the go tool: automatic fetch & build
 - guru: static analysis, bug finding, code navigation
 - godoc.org: open source package index and docs
+
+* You're interested in Go. What next?
+Take the Go Tour online.
+.link tour.golang.org
+Then go deeper ...
+.link golang.org/wiki/Learn
+Still interested?
+Run a pilot project.
+
+* Look!
+.link https://gobyexample.com/ Go by Example
+.link http://go-lang.cat-v.org/go-code Go Language Resources
+.link https://blog.joshsoftware.com/2014/03/10/how-do-i-create-a-presentation-using-go/ Rob Pike style Go presentation - Slides
+.link http://blog.oguzhan.info/?p=870 Go Programlama Dili Üzerine
